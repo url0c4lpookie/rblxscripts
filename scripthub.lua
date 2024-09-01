@@ -5,6 +5,7 @@ local Tab = Window:MakeTab({
 	Name = "Player",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
 Tab:AddBind({
 	Name = "Noclip",
 	Default = Enum.KeyCode.LeftAlt,
