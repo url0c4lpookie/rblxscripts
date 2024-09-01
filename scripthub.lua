@@ -3,7 +3,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "lmachild2011's Script Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
 	Name = "Player",
-	Icon = "rbxassetid://7992557371",
+	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
 Tab:AddBind({
@@ -20,7 +20,7 @@ Tab:AddBind({
 })
 local Tab = Window:MakeTab({
 	Name = "Lag Switch",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
@@ -34,13 +34,13 @@ loadstring(game:HttpGet("raw.githubusercontent.com/urlocalpookie/rblxscripts/mai
 })
 local Tab = Window:MakeTab({
 	Name = "DOORS",
-	Icon = "rbxassetid://10653365016",
+	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
 Tab:AddLabel("COMING SOON!")
 local Tab = Window:MakeTab({
 	Name = "MM2",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
@@ -64,7 +64,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Norm
 })
 local Tab = Window:MakeTab({
 	Name = "Rejoin",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
