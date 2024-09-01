@@ -36,17 +36,23 @@ loadstring(game:HttpGet("raw.githubusercontent.com/urlocalpookie/rblxscripts/mai
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "MM2",
+	Name = "Teleport",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "Teleport"
+	Name = "MM2"
 })
 Tab:AddButton({
 	Name = "Map",
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Normal.Spawns.Spawn.CFrame
+  	end    
+})
+Tab:AddButton({
+	Name = "Lobby",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Lobby.Spawns.SpawnLocation.CFrame
   	end    
 })
 local Tab = Window:MakeTab({
