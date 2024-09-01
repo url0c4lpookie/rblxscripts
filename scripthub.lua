@@ -35,3 +35,17 @@ Tab:AddButton({
 loadstring(game:HttpGet("raw.githubusercontent.com/urlocalpookie/rblxscripts/main/lagswitch.lua"))()
   	end    
 })
+local Tab = Window:MakeTab({
+	Name = "Rejoin",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Rejoin"
+})
+Tab:AddButton({
+	Name = "Rejoin",
+	Callback = function()
+game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+  	end    
+})
