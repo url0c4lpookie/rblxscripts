@@ -70,6 +70,16 @@ Tab:AddBind({
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Normal.Spawns.Spawn.CFrame
 	end    
 })
+Tab:AddButton({
+	Name = "Bring All",
+	Callback = function()
+for i, player in pairs(game.Players:GetDescendants()) do
+if player:IsA("Player") then
+player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+        end    
+    end
+end
+})
 local Tab = Window:MakeTab({
 	Name = "Rejoin",
 	Icon = "rbxassetid://0",
