@@ -10,7 +10,7 @@ local Section = Tab:AddSection({
 	Name = "Noclip"
 })
 Tab:AddBind({
-	Name = "Bind",
+	Name = "Noclip",
 	Default = Enum.KeyCode.LeftAlt,
 	Hold = false,
 	Callback = function()
@@ -20,4 +20,18 @@ Tab:AddBind({
 	        end
 	    end
 	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Lag Switch",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Lag Switch"
+})
+Tab:AddButton({
+	Name = "Lag Switch (Click X to Activate)",
+	Callback = function()
+loadstring(game:HttpGet("raw.githubusercontent.com/urlocalpookie/rblxscripts/main/lagswitch.lua"))()
+  	end    
 })
