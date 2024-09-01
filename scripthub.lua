@@ -44,14 +44,23 @@ game:GetService("RunService").RenderStepped:Connect(function()
 end)
   	end
 })
-Tab:AddTextbox({
-	Name = "Camera Offset",
-	Default = "0,0,0",
-	TextDisappear = true,
-	Callback = function(Value)
-game.Players.LocalPlayer.Character.Humanoid.CameraOffset = Vector3.new(Value)
-	end	  
-})
+Tab:AddButton({
+	Name = "Disable First Person Body",
+	Callback = function()
+ --//Variables\\--
+local player =  game:GetService("Players").LocalPlayer
+local character = player.character or player.characterAdded:Wait()
+
+--//Events\\--
+game:GetService("RunService").RenderStepped:Connect(function()
+ --//Visible\\--
+ for i, part in pairs(character:GetChildren())do
+  if string.match(part.Name, "Arm") or string.match(part.Name, "Hand") or string.match(part.Name, "Torso") or string.match(part.Name, "Leg") then
+   part.LocalTransparencyModifier = 1
+  end
+ end
+end)
+  	end
 local Tab = Window:MakeTab({
 	Name = "Lag Switch",
 	Icon = "rbxassetid://0",
