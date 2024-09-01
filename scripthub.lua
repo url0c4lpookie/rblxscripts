@@ -6,6 +6,14 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
+Tab:AddTextbox({
+	Name = "WalkSpeed",
+	Default = "16",
+	TextDisappear = true,
+	Callback = function(Value)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end	  
+})
 Tab:AddBind({
 	Name = "Noclip",
 	Default = Enum.KeyCode.LeftAlt,
