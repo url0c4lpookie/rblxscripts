@@ -36,12 +36,18 @@ loadstring(game:HttpGet("raw.githubusercontent.com/urlocalpookie/rblxscripts/mai
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "Teleport",
+	Name = "DOORS",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+Tab:AddLabel("COMING SOON!")
+local Tab = Window:MakeTab({
+	Name = "MM2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "MM2"
+	Name = "Teleport"
 })
 Tab:AddBind({
 	Name = "Lobby",
