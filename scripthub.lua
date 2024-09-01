@@ -98,6 +98,19 @@ player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.Hu
     end
 end
 })
+local Section = Tab:AddSection({
+	Name = "Glitching"
+})
+Tab:AddButton({
+	Name = "Enable Glitching",
+	Callback = function()
+	    for i, part in pairs(game.Workspace.Normal.Map:GetDescendants()) do
+	        if string.match(part.Name, "Glitch") then
+	            part:Destroy()
+	        end
+	    end
+	end
+})
 local Tab = Window:MakeTab({
 	Name = "Rejoin",
 	Icon = "rbxassetid://0",
