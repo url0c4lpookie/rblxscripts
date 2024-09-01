@@ -43,17 +43,21 @@ local Tab = Window:MakeTab({
 local Section = Tab:AddSection({
 	Name = "MM2"
 })
-Tab:AddButton({
-	Name = "Map",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Normal.Spawns.Spawn.CFrame
-  	end    
-})
-Tab:AddButton({
+Tab:AddBind({
 	Name = "Lobby",
+	Default = Enum.KeyCode.M,
+	Hold = false,
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Lobby.Spawns.SpawnLocation.CFrame
-  	end    
+	end    
+})
+Tab:AddBind({
+	Name = "Map",
+	Default = Enum.KeyCode.M,
+	Hold = false,
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Normal.Spawns.Spawn.CFrame
+	end    
 })
 local Tab = Window:MakeTab({
 	Name = "Rejoin",
