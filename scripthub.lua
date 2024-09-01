@@ -99,4 +99,4 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
-Tab:AddLabel("09/01/2024 6:03PM CDT - Recently Created lmachild2011's Script Hub")
+Tab:AddLabel("09/01/2024 - Recently Created lmachild2011's Script Hub")
