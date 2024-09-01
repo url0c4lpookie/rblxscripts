@@ -36,7 +36,7 @@ loadstring(game:HttpGet("raw.githubusercontent.com/urlocalpookie/rblxscripts/mai
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "Teleports",
+	Name = "MM2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
