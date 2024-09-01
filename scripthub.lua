@@ -45,7 +45,7 @@ local Section = Tab:AddSection({
 })
 Tab:AddBind({
 	Name = "Lobby",
-	Default = Enum.KeyCode.M,
+	Default = Enum.KeyCode.L,
 	Hold = false,
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Lobby.Spawns.SpawnLocation.CFrame
