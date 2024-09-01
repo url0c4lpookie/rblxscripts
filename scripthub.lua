@@ -7,7 +7,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "Noclip"
+	Name = "Player"
 })
 Tab:AddBind({
 	Name = "Noclip",
