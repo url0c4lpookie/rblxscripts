@@ -49,3 +49,17 @@ Tab:AddButton({
 game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
   	end    
 })
+local Tab = Window:MakeTab({
+	Name = "Teleports",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Teleport"
+})
+Tab:AddButton({
+	Name = "Map",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Normal.Spawns.Spawn.CFrame
+  	end    
+})
