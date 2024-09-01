@@ -2,13 +2,9 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "lmachild2011's Script Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
-	Name = "Noclip",
+	Name = "Player",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-})
-local Section = Tab:AddSection({
-	Name = "Player"
-})
 Tab:AddBind({
 	Name = "Noclip",
 	Default = Enum.KeyCode.LeftAlt,
