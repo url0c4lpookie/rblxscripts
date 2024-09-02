@@ -101,16 +101,6 @@ end
 local Section = Tab:AddSection({
 	Name = "Glitching"
 })
-Tab:AddButton({
-	Name = "Enable Glitching",
-	Callback = function()
-	    for i, part in pairs(game.Workspace.Normal.Map:GetDescendants()) do
-	        if string.match(part.Name, "Glitch") then
-	            part:Destroy()
-	        end
-	    end
-	end
-})
 local Tab = Window:MakeTab({
 	Name = "Rejoin",
 	Icon = "rbxassetid://0",
@@ -130,5 +120,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
+Tab:AddLabel("09/01/24 - Removed feature to remove glitch parts.")
 Tab:AddLabel("09/01/24 - Added feature to remove glitch parts in MM2")
 Tab:AddLabel("09/01/24 - Recently Created lmachild2011's Script Hub")
