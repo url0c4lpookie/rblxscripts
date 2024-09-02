@@ -57,32 +57,6 @@ loadstring(game:HttpGet("raw.githubusercontent.com/urlocalpookie/rblxscripts/mai
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "DOORS",
-	Icon = "rbxassetid://0",
-	PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "Speed it up.",
-	Default = Enum.Keycode.RightAlt,
-	Hold = true,
-	Callback = function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
-  	end    
-})
-Tab:AddLabel("COMING SOON!")
-local Section = Tab:AddSection({
-	Name = "Floor 1"
-})
-local Section = Tab:AddSection({
-	Name = "Floor 2"
-})
-local Section = Tab:AddSection({
-	Name = "Rooms"
-})
-local Section = Tab:AddSection({
-	Name = "Backdoor"
-})
-local Tab = Window:MakeTab({
 	Name = "MM2",
 	Icon = "rbxassetid://0",
 	PremiumOnly = false
