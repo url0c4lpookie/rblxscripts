@@ -134,6 +134,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
+Tab:AddLabel("09/02/24 - Moved DOORS to another script hub.")
+Tab:AddLabel("09/02/24 - Removed shortcut feature due to glitches.")
 Tab:AddLabel("09/01/24 - Removed feature to remove glitch parts.")
 Tab:AddLabel("09/01/24 - Added feature to remove glitch parts in MM2")
 Tab:AddLabel("09/01/24 - Recently Created lmachild2011's Script Hub")
