@@ -61,6 +61,12 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
+Tab:AddButton({
+	Name = "Speed it up.",
+	Callback = function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+  	end    
+})
 Tab:AddLabel("COMING SOON!")
 local Section = Tab:AddSection({
 	Name = "Floor 1"
