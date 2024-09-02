@@ -14,10 +14,8 @@ Tab:AddTextbox({
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 	end	  
 })
-Tab:AddBind({
+Tab:AddButton({
 	Name = "Noclip",
-	Default = Enum.KeyCode.LeftAlt,
-	Hold = false,
 	Callback = function()
 	for i, part in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 		if part:IsA("BasePart") or part:IsA("MeshPart") then
@@ -72,18 +70,14 @@ local Tab = Window:MakeTab({
 local Section = Tab:AddSection({
 	Name = "Teleport"
 })
-Tab:AddBind({
+Tab:AddButton({
 	Name = "Lobby",
-	Default = Enum.KeyCode.L,
-	Hold = false,
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Lobby.Spawns.SpawnLocation.CFrame
 	end    
 })
-Tab:AddBind({
+Tab:AddButton({
 	Name = "Map",
-	Default = Enum.KeyCode.M,
-	Hold = false,
 	Callback = function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Normal.Spawns.Spawn.CFrame
 	end    
