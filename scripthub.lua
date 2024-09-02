@@ -62,6 +62,18 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 Tab:AddLabel("COMING SOON!")
+local Section = Tab:AddSection({
+	Name = "Floor 1"
+})
+local Section = Tab:AddSection({
+	Name = "Floor 2"
+})
+local Section = Tab:AddSection({
+	Name = "Rooms"
+})
+local Section = Tab:AddSection({
+	Name = "Backdoor"
+})
 local Tab = Window:MakeTab({
 	Name = "MM2",
 	Icon = "rbxassetid://0",
