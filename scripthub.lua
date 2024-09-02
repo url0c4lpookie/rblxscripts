@@ -19,27 +19,11 @@ Tab:AddBind({
 	Default = Enum.KeyCode.LeftAlt,
 	Hold = false,
 	Callback = function()
-	    game:GetService("RunService").RenderStepped:Connect(function()
 	for i, part in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 		if part:IsA("BasePart") or part:IsA("MeshPart") then
 			part.CanCollide = false
 		end
 	end
-end)
-end
-})
-Tab:AddBind({
-	Name = "Clip",
-	Default = Enum.KeyCode.RightAlt,
-	Hold = false,
-	Callback = function()
-	    game:GetService("RunService").RenderStepped:Connect(function()
-	for i, part in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
-		if part:IsA("BasePart") or part:IsA("MeshPart") then
-			part.CanCollide = true
-		end
-	end
-end)
 end
 })
 Tab:AddButton({
