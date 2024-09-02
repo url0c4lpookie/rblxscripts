@@ -63,7 +63,7 @@ local Tab = Window:MakeTab({
 })
 Tab:AddBind({
 	Name = "Speed it up.",
-	Default = Enum.Keycode.RightBracket,
+	Default = Enum.Keycode.RightAlt,
 	Hold = true,
 	Callback = function()
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
