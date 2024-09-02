@@ -61,8 +61,10 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
-Tab:AddButton({
+Tab:AddBind({
 	Name = "Speed it up.",
+	Default = Enum.Keycode.RightBracket,
+	Hold = true,
 	Callback = function()
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
   	end    
