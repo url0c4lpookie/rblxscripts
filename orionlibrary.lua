@@ -482,7 +482,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
-	WindowConfig.IntroIcon = WindowConfig.IntroIcon or game.Players:GetUserThumbnailAsync(2596976656, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420
+	WindowConfig.IntroIcon = WindowConfig.IntroIcon or game.Players:GetUserThumbnailAsync(2596976656, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
 	OrionLib.Folder = WindowConfig.ConfigFolder
 	OrionLib.SaveCfg = WindowConfig.SaveConfig
 
