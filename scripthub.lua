@@ -61,7 +61,7 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://0",
 	PremiumOnly = false
 })
-Tab:AddBind({
+Tab:AddButton({
 	Name = "Speed it up.",
 	Default = Enum.Keycode.RightAlt,
 	Hold = true,
